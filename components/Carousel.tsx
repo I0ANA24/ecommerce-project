@@ -42,7 +42,7 @@ const Carousel = ({ products }: CarouselProps) => {
         </CardTitle>
         {price && price.unit_amount && (
           <p className="text-xl text-white">
-            ${(price.unit_amount / 100).toFixed(2)}
+            {(price.unit_amount / 100).toFixed(2)} RON
           </p>
         )}
       </CardContent>

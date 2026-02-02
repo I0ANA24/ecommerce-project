@@ -29,15 +29,15 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        <Link href="/" className="hover:text-blue-600">
+        <Link href="/" className="hover:text-blue-600 font-black">
           My Ecommerce
         </Link>
         <div className="hidden md:flex space-x-6">
-          <Link href="/">Home</Link>
-          <Link href="/products" className="hover:text-blue-600">
+          <Link href="/" className="hover:text-blue-600 font-semibold transition">Home</Link>
+          <Link href="/products" className="hover:text-blue-600 font-semibold transition">
             Products
           </Link>
-          <Link href="/checkout" className="hover:text-blue-600">
+          <Link href="/checkout" className="hover:text-blue-600 font-semibold transition">
             Checkout
           </Link>
         </div>
@@ -57,19 +57,19 @@ const Navbar = () => {
       </div>
       {mobileOpen && (
         <nav className="md:hidden bg-white shadow-md">
-          <ul className="flex flex-col p-4 space-y-2">
+          <ul className="flex flex-col justify-center items-center p-4 pb-8 space-y-4">
             <li>
-              <Link href="/" className="block hover:text-blue-600">
+              <Link href="/" className="block hover:text-blue-600 font-semibold transition">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/products" className="block hover:text-blue-600">
+              <Link href="/products" className="block hover:text-blue-600 font-semibold transition">
                 Products
               </Link>
             </li>
             <li>
-              <Link href="/checkout" className="block hover:text-blue-600">
+              <Link href="/checkout" className="block hover:text-blue-600 font-semibold transition">
                 Checkout
               </Link>
             </li>
